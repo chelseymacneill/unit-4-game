@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Guessing Game</title>
+    <!-- Link to the JQuery API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Bootstrap API -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Link to Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto" rel="stylesheet" type="text/css">
+    <!-- CSS Spcific Styling-->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style_cm.css" />
+    
+    <!-- Wrapping divs in borders to see what is happening -->
+    
+    
+</head>
+<body>
+    
+    <div class="container-fluid bg">
+        <div class='row align-items-center' id='title-row'> <!-- Row 1 -->
+            <div class="col .col-sm-8 .col-m-8 .col-lg-8 .col-xl-8"></div>
+            <h1 id='title'> Guess the Right Amount Game </h1>
+            <p id='instructions'> Each click of a jewel adds to your guess. Add up more than the random number and you lose.</p>
+        </div>
+        
+        <div class="row align-items-center" id='score-row'> <!-- Row 2-->
+            <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-start"> <!-- R2 C1-->
+                <div>
+                <h3> Try to match this number </h3> <br>
+                <h4 id="randomNumber">  </h4>
+                </div>
+            </div>
+            <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-center"> <!-- R2 C2-->
+                <h4 id="your-guess"> Your guess </h4>
+            </div>
+            <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-end"> <!-- R2 C3-->
+                <div id="total-wins">
+                    <h4> Wins </h4>
+                </div>
+                <div id="total-losses"> 
+                    <h4> Losses </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center" id='jewel-row'> <!-- Row 3 -->
+            <div class="col"> <!-- R3 C1-->
+                <img class="img-responsive col-3-md jewel" id="jewel1" src="assets/images/red_jewel.jpg" alt="jewel1">
+            </div>
+            <div class="col"> <!-- R3 C2-->
+                <img class="img-responsive col-3-md jewel" id="jewel2" src="assets/images/red_jewel.jpg" alt="jewel2">
+            </div>
+            <div class="col"> <!-- R3 C3-->
+                <img class="img-responsive col-3-md jewel" id="jewel3" src="assets/images/red_jewel.jpg" alt="jewel3">
+            </div>
+            <div class="col"> <!-- R3 C4-->
+                <img class="img-responsive col-3-md jewel" id="jewel4" src="assets/images/red_jewel.jpg" alt="jewel4">
+            </div>
+        </div>
+    </div>
+    
+      
+    <!-- Linking to JS -->
+    <script src="assets/javascript/game_redo.js" type="text/javascript"></script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* Styling for the body background*/
+body, html {
+  height: 100%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("https://image.freepik.com/free-photo/blurred-lights-blue-background-lights-blue-background_3248-414.jpg");
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding: 0px;
+}
+
+
+
+/* Wins, losses div styling*/
+
+#total-wins { border: 5px;
+  border-color: greenyellow;
+  border-style: bold;
+  
+}
+
+/* Styling for title row div */
+#title-row, #score-row { border-style: solid;
+  border-width: 10px;
+  margin-top: 25px;
+}
+
+/* Styling for jewel images*/
+.jewel { height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
