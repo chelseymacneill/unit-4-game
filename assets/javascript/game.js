@@ -38,25 +38,25 @@ $(document).ready(function() {
             sumOfGuesses += jewel1;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel1);
-            //numberCheck();
+            numberCheck();
         });
         $("#jewel2").click(function () {
             sumOfGuesses += jewel2;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel2);
-            //numberCheck();
+            numberCheck();
         });
         $("#jewel3").click(function () {
             sumOfGuesses += jewel3;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel3);
-            //numberCheck();
+            numberCheck();
         });
         $("#jewel4").click(function () {
             sumOfGuesses += jewel4;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel4);
-            //numberCheck();
+            numberCheck();
         });
     };
     
@@ -75,7 +75,7 @@ $(document).ready(function() {
             $("#wins").text(wins);
             resetGame();
         }
-        if (totalScore > randomNumber) {
+        if (sumOfGuesses > randomNumber) {
             // Have an HTML element created that says you lose instead of a pop up
             alert("No Jewel for you!");
             losses++;
@@ -90,6 +90,7 @@ generateRandomNumber();
 generateJewelValues();
 jewelClicks();
 numberCheck();
+resetGame();
 
 
 
