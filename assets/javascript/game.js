@@ -3,7 +3,7 @@ $(document).ready(function() {
     
     
     // Variables 
-    const randomNumber = 0; 
+    var randomNumber = 0; 
     const randomNumberMax = 120;
     const randomNumberMin = 19;
     var sumOfGuesses = 0; 
@@ -36,25 +36,25 @@ $(document).ready(function() {
     function jewelClicks() {
         $("#jewel1").click(function () {
             sumOfGuesses += jewel1;
-            $("#sumofGuesses").text(sumOfGesses);
+            $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel1);
             //numberCheck();
         });
         $("#jewel2").click(function () {
             sumOfGuesses += jewel2;
-            $("#sumofGuesses").text(sumOfGesses);
+            $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel2);
             //numberCheck();
         });
         $("#jewel3").click(function () {
             sumOfGuesses += jewel3;
-            $("#sumOfGuesses").text(sumOfGesses);
+            $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel3);
             //numberCheck();
         });
         $("#jewel4").click(function () {
             sumOfGuesses += jewel4;
-            $("#sumOfGuesses").text(sumOfGesses);
+            $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel4);
             //numberCheck();
         });
@@ -68,14 +68,14 @@ $(document).ready(function() {
     };
     
     function numberCheck() {
-        if (sumOfGuesses === randomNum) {
+        if (sumOfGuesses === randomNumber) {
             // Have an HTML element created that says you are a winner instead of a pop up
             alert("You're a winner!");
             wins++;
             $("#wins").text(wins);
             resetGame();
         }
-        if (totalScore > randomNum) {
+        if (totalScore > randomNumber) {
             // Have an HTML element created that says you lose instead of a pop up
             alert("No Jewel for you!");
             losses++;
@@ -84,11 +84,17 @@ $(document).ready(function() {
         }
     };
     
-}); // Document ready closing
-
 //Function Calls
 
 generateRandomNumber();
 generateJewelValues();
-jewelClicks()
+jewelClicks();
+numberCheck();
+
+
+
+
+}); // Document ready closing
+
+
 
