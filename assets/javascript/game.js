@@ -61,27 +61,30 @@ $(document).ready(function() {
     };
     
     function resetGame() {
-        $("#totalScore").empty();
+        $("#sumOfGuesses").empty();
+        $("#user-instructions".text("Try again!"))
         generateRandomNumber();
         generateJewelValues();
-        randomNumber= 0;
+        
     };
     
     function numberCheck() {
         if (sumOfGuesses === randomNumber) {
             // Have an HTML element created that says you are a winner instead of a pop up
-            alert("You're a winner!");
+            // Add one to the win column
             wins++;
+            // Update the html of wins
             $("#wins").text(wins);
+            // Have a you win image pop up 
+
+            // Reset values for the player to play again
             resetGame();
-        }
-        if (sumOfGuesses > randomNumber) {
+        } else if (sumOfGuesses > randomNumber) {
             // Have an HTML element created that says you lose instead of a pop up
-            alert("No Jewel for you!");
             losses++;
             $("#losses").text(losses);
             resetGame();
-        }
+        } 
     };
     
 //Function Calls
@@ -90,10 +93,6 @@ generateRandomNumber();
 generateJewelValues();
 jewelClicks();
 numberCheck();
-resetGame();
-
-
-
 
 }); // Document ready closing
 

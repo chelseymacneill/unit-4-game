@@ -31,41 +31,54 @@
         <div class="row align-items-center" id='score-row'> <!-- Row 2-->
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-start"> <!-- R2 C1-->
                 <div>
-                <h3> Try to match this number </h3> <br>
-                <h4 id="randomNumber">  </h4>
+                    <h3> Try to match this number </h3> <br>
+                    <h4 id="randomNumber">  </h4>
                 </div>
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-center"> <!-- R2 C2-->
                 <h4 id="sumOfGuesses"> Your guess </h4>
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-end"> <!-- R2 C3-->
-                <div id="total-wins">
+                <div id="wins">
                     <h4> Wins </h4>
                 </div>
-                <div id="total-losses"> 
+                <div id="losses"> 
                     <h4> Losses </h4>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center" id='jewel-row'> <!-- Row 3 -->
-            <div class="col"> <!-- R3 C1-->
-                <img class="img-responsive col-3-md jewel" id="jewel1" src="assets/images/Jewel_1.jpg" alt="jewel1">
+        <div class="row align-items-center">
+            <div class="col align-items-center">  </div>
+            <h3 id="user-instructions"> User instructions here </h3>
+        </div>
+        
+        <div class="row">
+            <div class="col align-items-center" id="spacingabovecontent">  </div>
+        </div>
+        <div class="row align-items-center" id='jewel-row1'> <!-- Row 3 -->
+            
+            <div class="col align-items-center"> <!-- R3 C1-->
+                <img class="img-responsive col-3-md align-items-center jewel" id="jewel1" src="assets/images/jewel_sq.jpg" alt="jewel1">
             </div>
             <div class="col"> <!-- R3 C2-->
-                <img class="img-responsive col-3-md jewel" id="jewel2" src="assets/images/jewel_2.jpg" alt="jewel2">
+                <img class="img-responsive col-3-md align-items-center jewel" id="jewel2" src="assets/images/jewelsq2.jpg" alt="jewel2">
             </div>
-            <div class="col"> <!-- R3 C3-->
-                <img class="img-responsive col-3-md jewel" id="jewel3" src="assets/images/jewel_3.jpg" alt="jewel3">
+        </div>
+        
+        <div class="row align-items-center" id='jewel-row1'> <!-- Row 3 -->
+            <div class="col align-items-center"> <!-- R3 C3-->
+                <img class="img-responsive col-3-md align-items-center jewel" id="jewel3" src="assets/images/jewelsq3.jpeg" alt="jewel3">
             </div>
-            <div class="col"> <!-- R3 C4-->
-                <img class="img-responsive col-3-md jewel" id="jewel4" src="assets/images/jewel_4.jpg" alt="jewel4">
+            <div class="col align-items-center"> <!-- R3 C4-->
+                <img class="img-responsive col-3-md align-items-center jewel" id="jewel4" src="assets/images/jewelsq4.jpg" alt="jewel4">
             </div>
         </div>
     </div>
-    
-      
-    <!-- Linking to JS -->
-    <script src="assets/javascript/game.js" type="text/javascript"></script>
-    
+</div>
+
+
+<!-- Linking to JS -->
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+
 </body>
 </html>
