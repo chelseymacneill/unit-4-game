@@ -31,30 +31,36 @@
         
         <div class="row align-items-center" id='score-row'> <!-- Row 2-->
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-start"> <!-- R2 C1-->
-                <div>
+                <div id="chosenNumber" class="boxes">
                     <h3> Chosen Number </h3> <br>
                     <h4 id="randomNumber">  </h4>
                 </div>
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-center"> <!-- R2 C2-->
-                <h3> Jewel points</h3>
-                <h4 id="sumOfGuesses"> 0 </h4>
-                
+                <div id="jewelPoints" class="boxes"> 
+                    <h3> Jewel points</h3>
+                    <h4 id="sumOfGuesses"> 0 </h4>
+                </div>
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-end"> <!-- R2 C3-->
-                <h3> Wins </h3>
-                <div id="wins"> 
-                    <h4> 0 </h4>
-                </div>
-                <h3> Losses </h3>
-                <div id="losses"> 
-                    <h4> 0 </h4>
+                <div id="winslosses" class="boxes">
+                    <h3> Wins </h3>
+                    <div id="wins"> 
+                        <h4> 0 </h4>
+                    </div>
+                    <h3> Losses </h3>
+                    <div id="losses"> 
+                        <h4> 0 </h4>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="row align-items-center">
-            <div class="col align-items-center"> <h3 id="user-instructions"> User instructions here </h3> 
+            <div class="col align-items-center"> 
+                <div id="user-instructions"> 
+                    <h2> Start by clicking on a "Jewel" </h2>
+                </div>  
             </div>
         </div>
         
@@ -65,7 +71,7 @@
         <div class="row align-items-center" id='jewel-row1'> <!-- Row 3 -->
             
             <div class="col align-items-center"> <!-- R3 C1-->
-                Empty for padding
+                <!-- Used for spacing-->
             </div>
             
             <div class="col align-items-center"> <!-- R3 C1-->
@@ -76,18 +82,18 @@
             </div>
             
             <div class="col align-items-center"> <!-- R3 C1-->
-                Empty for padding
+                <!-- Used for spacing-->
             </div>
         </div>
-
+        
         <div class="row">
-                <div class="col align-items-center" id="spacingbetweenimages">  </div>
-            </div>
-
+            <div class="col align-items-center" id="spacingbetweenimages">  </div>
+        </div>
+        
         <div class="row align-items-center" id='jewel-row2'> <!-- Row 3 -->
             
             <div class="col align-items-center"> <!-- R3 C1-->
-                Empty for padding
+                <!-- Used for spacing-->
             </div>
             
             <div class="col align-items-center"> <!-- R3 C3-->
@@ -98,7 +104,7 @@
             </div>
             
             <div class="col align-items-center"> <!-- R3 C1-->
-                Empty for padding
+                <!-- Used for spacing-->
             </div>
         </div>
     </div>

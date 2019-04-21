@@ -65,21 +65,23 @@ $(document).ready(function() {
     };
     
     function resetGame() {
-        $("#sumOfGuesses").empty();
-       // $("#user-instructions".html("Try again!"))
+        $("#sumOfGuesses").text("0");
         generateRandomNumber();
         generateJewelValues();
         sumOfGuesses = 0;
     };
     
     function numberCheck() {
+
+
+
         if (sumOfGuesses === randomNumber) {
             // Have an HTML element created that says you are a winner instead of a pop up
             // Add one to the win column
             wins++;
             // Update the html of wins
             $("#wins").text(wins);
-           // $("#user-instructions").html("You win!")
+            $("#user-instructions").html("<h2> You won! Try again! </h2>")
             // Have a you win image pop up 
 
             // Reset values for the player to play again
@@ -89,9 +91,9 @@ $(document).ready(function() {
             // Have an HTML element created that says you lose instead of a pop up
             losses++;
             $("#losses").text(losses);
-           // $("#user-instructions").html("You win!")
+            $("#user-instructions").html("<h2> You lost!!! Redeem yourself by trying again! </h2>")
             resetGame();
-        } 
+        } else  $("#user-instructions").html("<h2> You need more Jewel's keep guessing!</h2>")
     };
     
 
