@@ -1,4 +1,5 @@
 # unit-4-game
+https://chelseymacneill.github.io/unit-4-game/
 
 # What the project does
   This is a simple game I built using JS and JQuery. A random number is generated as well as values for each "Jewel". You are not shown the values of the Jewel's but when you click any Jewel your guess is incremented by that Jewel's value. You win by having your guess match the randomly chosen number and lose if you go over. 
