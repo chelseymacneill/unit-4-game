@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Guessing Game</title>
+    <title>Jewel Guessing Game</title>
     <!-- Link to the JQuery API -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to Bootstrap API -->
@@ -23,39 +23,50 @@
     
     <div class="container-fluid bg">
         <div class='row align-items-center' id='title-row'> <!-- Row 1 -->
-            <div class="col .col-sm-8 .col-m-8 .col-lg-8 .col-xl-8"></div>
-            <h1 id='title'> Guess the Right Amount Game </h1>
-            <p id='instructions'> Each click of a jewel adds to your guess. Add up more than the random number and you lose.</p>
+            <div class="col .col-sm-12 .col-m-12 .col-lg-12.col-xl-12 align-items-center">
+                <h1 id='title'> Jewel Guessing Game</h1>
+                <p id='instructions'> Each click of a "Jewel" adds to your guess. Match the chosen number exactly and you win! Add up more than the random number and you lose.</p>
+            </div>
         </div>
         
         <div class="row align-items-center" id='score-row'> <!-- Row 2-->
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-start"> <!-- R2 C1-->
                 <div>
-                    <h3> Try to match this number </h3> <br>
+                    <h3> Chosen Number </h3> <br>
                     <h4 id="randomNumber">  </h4>
                 </div>
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-center"> <!-- R2 C2-->
-                <h4 id="sumOfGuesses"> Your guess </h4>
+                <h3> Jewel points</h3>
+                <h4 id="sumOfGuesses"> 0 </h4>
+                
             </div>
             <div class="col .col-sm-4 .col-m-4 .col-lg-4 .col-xl-4 align-items-end"> <!-- R2 C3-->
-                <div id="wins">
-                    <h4> Wins </h4>
+                <h3> Wins </h3>
+                <div id="wins"> 
+                    <h4> 0 </h4>
                 </div>
+                <h3> Losses </h3>
                 <div id="losses"> 
-                    <h4> Losses </h4>
+                    <h4> 0 </h4>
                 </div>
             </div>
         </div>
+        
         <div class="row align-items-center">
-            <div class="col align-items-center">  </div>
-            <h3 id="user-instructions"> User instructions here </h3>
+            <div class="col align-items-center"> <h3 id="user-instructions"> User instructions here </h3> 
+            </div>
         </div>
         
         <div class="row">
             <div class="col align-items-center" id="spacingabovecontent">  </div>
         </div>
+        
         <div class="row align-items-center" id='jewel-row1'> <!-- Row 3 -->
+            
+            <div class="col align-items-center"> <!-- R3 C1-->
+                Empty for padding
+            </div>
             
             <div class="col align-items-center"> <!-- R3 C1-->
                 <img class="img-responsive col-3-md align-items-center jewel" id="jewel1" src="assets/images/jewel_sq.jpg" alt="jewel1">
@@ -63,14 +74,31 @@
             <div class="col"> <!-- R3 C2-->
                 <img class="img-responsive col-3-md align-items-center jewel" id="jewel2" src="assets/images/jewelsq2.jpg" alt="jewel2">
             </div>
+            
+            <div class="col align-items-center"> <!-- R3 C1-->
+                Empty for padding
+            </div>
         </div>
-        
-        <div class="row align-items-center" id='jewel-row1'> <!-- Row 3 -->
+
+        <div class="row">
+                <div class="col align-items-center" id="spacingbetweenimages">  </div>
+            </div>
+
+        <div class="row align-items-center" id='jewel-row2'> <!-- Row 3 -->
+            
+            <div class="col align-items-center"> <!-- R3 C1-->
+                Empty for padding
+            </div>
+            
             <div class="col align-items-center"> <!-- R3 C3-->
                 <img class="img-responsive col-3-md align-items-center jewel" id="jewel3" src="assets/images/jewelsq3.jpeg" alt="jewel3">
             </div>
             <div class="col align-items-center"> <!-- R3 C4-->
                 <img class="img-responsive col-3-md align-items-center jewel" id="jewel4" src="assets/images/jewelsq4.jpg" alt="jewel4">
+            </div>
+            
+            <div class="col align-items-center"> <!-- R3 C1-->
+                Empty for padding
             </div>
         </div>
     </div>

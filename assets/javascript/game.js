@@ -38,34 +38,38 @@ $(document).ready(function() {
             sumOfGuesses += jewel1;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel1);
+            console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel2").click(function () {
             sumOfGuesses += jewel2;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel2);
+            console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel3").click(function () {
             sumOfGuesses += jewel3;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel3);
+            console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel4").click(function () {
             sumOfGuesses += jewel4;
             $("#sumOfGuesses").text(sumOfGuesses);
             console.log(jewel4);
+            console.log(sumOfGuesses);
             numberCheck();
         });
     };
     
     function resetGame() {
         $("#sumOfGuesses").empty();
-        $("#user-instructions".text("Try again!"))
+       // $("#user-instructions".html("Try again!"))
         generateRandomNumber();
         generateJewelValues();
-        
+        sumOfGuesses = 0;
     };
     
     function numberCheck() {
@@ -75,24 +79,29 @@ $(document).ready(function() {
             wins++;
             // Update the html of wins
             $("#wins").text(wins);
+           // $("#user-instructions").html("You win!")
             // Have a you win image pop up 
 
             // Reset values for the player to play again
             resetGame();
-        } else if (sumOfGuesses > randomNumber) {
+        } 
+        if (sumOfGuesses > randomNumber) {
             // Have an HTML element created that says you lose instead of a pop up
             losses++;
             $("#losses").text(losses);
+           // $("#user-instructions").html("You win!")
             resetGame();
         } 
     };
     
+
+
 //Function Calls
 
 generateRandomNumber();
 generateJewelValues();
 jewelClicks();
-numberCheck();
+
 
 }); // Document ready closing
 
