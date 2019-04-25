@@ -29,7 +29,7 @@ $(document).ready(function() {
     
     // Drying out generateJewelValues function
     function generateJewelValues() {
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < length.jewel; i++)
         jewel[i] = Math.floor((Math.random() * jewelMax) + jewelMin)
         ;
     };
