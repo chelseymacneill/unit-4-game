@@ -25,7 +25,16 @@ $(document).ready(function() {
         $("#randomNumber").text(randomNumber);
     };
     
+    // Drying out generateJewelValues function
     function generateJewelValues() {
+        for 
+    }
+
+
+
+
+
+    //function generateJewelValues() {
         jewel1 = Math.floor((Math.random() * jewelMax) + jewelMin);
         jewel2 = Math.floor((Math.random() * jewelMax) + jewelMin);
         jewel3 = Math.floor((Math.random() * jewelMax) + jewelMin);
