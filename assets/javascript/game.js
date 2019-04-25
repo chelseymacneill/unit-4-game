@@ -7,10 +7,12 @@ $(document).ready(function() {
     const randomNumberMax = 120;
     const randomNumberMin = 19;
     var sumOfGuesses = 0; 
-    var jewel1 = 0;
-    var jewel2 = 0;
-    var jewel3 = 0;
-    var jewel4 = 0;
+    // old way 
+    //var jewel1 = 0;
+    //var jewel2 = 0;
+    //var jewel3 = 0;
+    //var jewel4 = 0;
+    var jewel= []; 
     const jewelMax = 12;
     const jewelMin = 1;
     var wins = 0;
@@ -27,47 +29,45 @@ $(document).ready(function() {
     
     // Drying out generateJewelValues function
     function generateJewelValues() {
-        for 
-    }
-
-
-
-
+        for (var i = 0; i < 4; i++)
+        jewel[i] = Math.floor((Math.random() * jewelMax) + jewelMin)
+        ;
+    };
 
     //function generateJewelValues() {
-        jewel1 = Math.floor((Math.random() * jewelMax) + jewelMin);
-        jewel2 = Math.floor((Math.random() * jewelMax) + jewelMin);
-        jewel3 = Math.floor((Math.random() * jewelMax) + jewelMin);
-        jewel4 = Math.floor((Math.random() * jewelMax) + jewelMin);
-    };
+       // jewel1 = Math.floor((Math.random() * jewelMax) + jewelMin);
+       //jewel2 = Math.floor((Math.random() * jewelMax) + jewelMin);
+       //jewel3 = Math.floor((Math.random() * jewelMax) + jewelMin);
+       //jewel4 = Math.floor((Math.random() * jewelMax) + jewelMin);
+    
     
     // each time a crystal is clicked it will be added to the sumofGuesses
     function jewelClicks() {
         $("#jewel1").click(function () {
-            sumOfGuesses += jewel1;
+            sumOfGuesses += jewel[0];
             $("#sumOfGuesses").text(sumOfGuesses);
-            console.log(jewel1);
+            console.log(jewel[0]);
             console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel2").click(function () {
-            sumOfGuesses += jewel2;
+            sumOfGuesses += jewel[1];
             $("#sumOfGuesses").text(sumOfGuesses);
-            console.log(jewel2);
+            console.log(jewel[1]);
             console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel3").click(function () {
-            sumOfGuesses += jewel3;
+            sumOfGuesses += jewel[2];
             $("#sumOfGuesses").text(sumOfGuesses);
-            console.log(jewel3);
+            console.log(jewel[2]);
             console.log(sumOfGuesses);
             numberCheck();
         });
         $("#jewel4").click(function () {
-            sumOfGuesses += jewel4;
+            sumOfGuesses += jewel[3];
             $("#sumOfGuesses").text(sumOfGuesses);
-            console.log(jewel4);
+            console.log(jewel[3]);
             console.log(sumOfGuesses);
             numberCheck();
         });
