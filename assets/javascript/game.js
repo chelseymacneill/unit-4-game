@@ -7,12 +7,7 @@ $(document).ready(function() {
     const randomNumberMax = 120;
     const randomNumberMin = 19;
     var sumOfGuesses = 0; 
-    // old way 
-    //var jewel1 = 0;
-    //var jewel2 = 0;
-    //var jewel3 = 0;
-    //var jewel4 = 0;
-    var jewel= []; 
+    var jewel= [0,0,0,0]; 
     const jewelMax = 12;
     const jewelMin = 1;
     var wins = 0;
@@ -29,16 +24,11 @@ $(document).ready(function() {
     
     // Drying out generateJewelValues function
     function generateJewelValues() {
-        for (var i = 0; i < length.jewel; i++)
+        for (var i = 0; i < 4 ; i++)
         jewel[i] = Math.floor((Math.random() * jewelMax) + jewelMin)
+        console.log(length.jewel)
         ;
     };
-
-    //function generateJewelValues() {
-       // jewel1 = Math.floor((Math.random() * jewelMax) + jewelMin);
-       //jewel2 = Math.floor((Math.random() * jewelMax) + jewelMin);
-       //jewel3 = Math.floor((Math.random() * jewelMax) + jewelMin);
-       //jewel4 = Math.floor((Math.random() * jewelMax) + jewelMin);
     
     
     // each time a crystal is clicked it will be added to the sumofGuesses
